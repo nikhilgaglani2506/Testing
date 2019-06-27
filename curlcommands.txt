@@ -1,0 +1,75 @@
+https://reqres.in/api/users?page=2
+
+
+curl cOMMANDS:
+
+1) cURL 
+
+2) curl --help
+3) curl --manual
+4) clear
+5) curl https://reqres.in/api/users?page=2 (url)
+6) curl -L www.google.com
+
+================================
+
+7) Response with Header
+
+curl -i https://reqres.in/api/users?page=2
+
+
+===============================================
+For headers
+
+8) curl -I https://reqres.in/api/users?page=2
+
+=============================================
+
+9) GET DETAILS OF CLIENT SERVER INTERECTIONS
+
+-V Verbose
+
+curl -v https://reqres.in/api/users?page=2
+
+==============================================
+
+10) GET  LOG FILE of trace 
+
+curl  --trace logtrace.txt https://reqres.in/api/users?page=2
+
+
+curl  --trace -ascii logtrace1.txt https://reqres.in/api/users?page=2
+
+======================================================
+11) SEND HEADER IN REQUEST
+
+-H
+
+curl -H "Accept:application/json" url
+
+======================================================
+
+12) POST REQUEST
+
+-d or --data
+
+$ curl https://reqres.in/api/users -d "name:ABC&job:leader"
+
+
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+==============================================================
+
+13) USE ENTIRE JSON
+
+$ curl -i -X POST -H "Accept:application/json" https://reqres.in/api/users -d '{"name": "morpheus","job": "leader"}'
+
+=============================================================
+
+
+
+
